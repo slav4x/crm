@@ -1,8 +1,8 @@
 import React from 'react';
 
 import styles from './Table.module.sass';
-import TableItem from './TableItem';
-import TablePagination from './TablePagination';
+import { TableItem } from './TableItem';
+import { TablePagination } from './TablePagination';
 
 const Table: React.FC = () => {
   return (
@@ -30,4 +30,4 @@ const Table: React.FC = () => {
   );
 };
 
-export default Table;
+export { Table };

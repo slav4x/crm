@@ -17,4 +17,4 @@ const TableItem: React.FC = () => {
   );
 };
 
-export default TableItem;
+export { TableItem };

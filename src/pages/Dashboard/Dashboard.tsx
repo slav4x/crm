@@ -1,8 +1,6 @@
 import React from 'react';
 
-import Layout from '../../components/Layout/Layout';
-import Statistics from '../../components/Statistics/Statistics';
-import Table from '../../components/Table/Table';
+import { Layout, Statistics, Table } from '../../components';
 
 const Dashboard: React.FC = () => {
   return (
@@ -13,4 +11,4 @@ const Dashboard: React.FC = () => {
   );
 };
 
-export default Dashboard;
+export { Dashboard };

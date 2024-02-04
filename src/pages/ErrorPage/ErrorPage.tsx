@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouteError } from 'react-router-dom';
 
-import Layout from '../../components/Layout/Layout';
+import { Layout } from '../../components';
 
 const isErrorWithMessage = (value: unknown): value is { message: string } => {
   return typeof value === 'object' && value !== null && 'message' in value;
@@ -24,4 +24,4 @@ const ErrorPage: React.FC = () => {
   );
 };
 
-export default ErrorPage;
+export { ErrorPage };

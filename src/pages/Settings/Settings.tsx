@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Layout from '../../components/Layout/Layout';
+import { Layout } from '../../components';
 
 const Settings: React.FC = () => {
   return (
@@ -10,4 +10,4 @@ const Settings: React.FC = () => {
   );
 };
 
-export default Settings;
+export { Settings };

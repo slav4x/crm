@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Layout from '../../components/Layout/Layout';
+import { Layout } from '../../components';
 
 const Archive: React.FC = () => {
   return (
@@ -10,4 +10,4 @@ const Archive: React.FC = () => {
   );
 };
 
-export default Archive;
+export { Archive };

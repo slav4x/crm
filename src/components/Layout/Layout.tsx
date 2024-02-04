@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Header from '../Header/Header';
+import { Header } from '../';
 import styles from './Layout.module.sass';
 
 const Layout: React.FC = ({ children }) => {
@@ -14,4 +14,4 @@ const Layout: React.FC = ({ children }) => {
   );
 };
 
-export default Layout;
+export { Layout };

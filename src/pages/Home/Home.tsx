@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Layout from '../../components/Layout/Layout';
+import { Layout } from '../../components';
 
 const Home: React.FC = () => {
   return (
@@ -10,4 +10,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export { Home };

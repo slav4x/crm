@@ -21,4 +21,4 @@ const TablePagination: React.FC = () => {
   );
 };
 
-export default TablePagination;
+export { TablePagination };
