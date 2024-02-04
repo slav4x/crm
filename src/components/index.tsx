@@ -1,4 +1,4 @@
-export { Header } from './Header';
-export { Layout } from './Layout';
-export { Statistics } from './Statistics';
-export { Table } from './Table';
+export * from './Header';
+export * from './Layout';
+export * from './Statistics';
+export * from './Table';
