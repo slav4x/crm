@@ -4,10 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import Dashboard from './pages/Dashboard/Dashboard';
-import ErrorPage from './pages/ErrorPage/ErrorPage';
-import Home from './pages/Home/Home';
-import Settings from './pages/Settings/Settings';
+import { Archive, Dashboard, ErrorPage, Home, Settings } from './pages';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: 'dashboard',
     element: <Dashboard />,
+  },
+  {
+    path: 'archive',
+    element: <Archive />,
   },
   {
     path: 'settings',
