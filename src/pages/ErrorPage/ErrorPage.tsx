@@ -3,16 +3,23 @@ import { useRouteError } from 'react-router-dom';
 
 import Layout from '../../components/Layout/Layout';
 
+const isErrorWithMessage = (value: unknown): value is { message: string } => {
+  return typeof value === 'object' && value !== null && 'message' in value;
+};
+
 const ErrorPage: React.FC = () => {
-  const error: unknown = useRouteError();
+  const error = useRouteError();
+
+  let errorMessage = 'Unknown Error';
+  if (isErrorWithMessage(error)) {
+    errorMessage = error.message;
+  }
 
   return (
     <Layout>
       <h1>Oops!</h1>
       <p>Sorry, an unexpected error has occurred.</p>
-      <p>
-        <i>{error.statusText || error.message}</i>
-      </p>
+      <p>{errorMessage}</p>
     </Layout>
   );
 };
