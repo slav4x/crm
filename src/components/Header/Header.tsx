@@ -13,17 +13,19 @@ export default function Header() {
 
   return (
     <header className={styles['header']}>
-      {/* <div className={styles['header-logo']}></div> */}
-      <ul className={styles['header-nav']}>
-        {links.map((link) => (
-          <li
-            key={link.path}
-            className={location.pathname === link.path ? styles['active'] : ''}
-          >
-            <NavLink to={link.path}>{link.text}</NavLink>
-          </li>
-        ))}
-      </ul>
+      <div className="container">
+        {/* <div className={styles['header-logo']}></div> */}
+        <ul className={styles['header-nav']}>
+          {links.map((link) => (
+            <li
+              key={link.path}
+              className={location.pathname === link.path ? styles['active'] : ''}
+            >
+              <NavLink to={link.path}>{link.text}</NavLink>
+            </li>
+          ))}
+        </ul>
+      </div>
     </header>
   );
 }
