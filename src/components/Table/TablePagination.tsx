@@ -1,20 +1,20 @@
 import React from 'react';
 
-import styles from './Table.module.sass';
+import css from './Table.module.sass';
 
 const TablePagination: React.FC = () => {
   return (
-    <ul className={styles['table-pagination']}>
-      <li className={styles['prev']}>
+    <ul className={css['table-pagination']}>
+      <li className={css['prev']}>
         <a href="!#"></a>
       </li>
-      <li className={styles['current']}>
+      <li className={css['current']}>
         <a href="!#">1</a>
       </li>
       <li>
         <a href="!#">2</a>
       </li>
-      <li className={styles['next']}>
+      <li className={css['next']}>
         <a href="!#"></a>
       </li>
     </ul>

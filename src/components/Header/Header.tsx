@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
-import styles from './Header.module.sass';
+import css from './Header.module.sass';
 
 const Header: React.FC = () => {
   const location = useLocation();
@@ -13,14 +13,14 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className={styles['header']}>
-      <div className={styles['header-container']}>
-        <div className={styles['header-logo']}></div>
-        <ul className={styles['header-nav']}>
+    <header className={css['header']}>
+      <div className={css['header-container']}>
+        <div className={css['header-logo']}></div>
+        <ul className={css['header-nav']}>
           {links.map((link) => (
             <li
               key={link.path}
-              className={location.pathname === link.path ? styles['active'] : ''}
+              className={location.pathname === link.path ? css['active'] : ''}
             >
               <NavLink to={link.path}>{link.text}</NavLink>
             </li>
