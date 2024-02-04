@@ -1,0 +1,56 @@
+.statistics
+  display: flex
+  flex-wrap: wrap
+  gap: 20px
+  &-item
+    flex: 1
+    background: #fff
+    box-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a
+    border-radius: 7px
+    padding: 20px 24px 14px
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-end
+    p
+      margin: 0
+      font-size: 14px
+      font-weight: 500
+      color: rgb(107 114 128 / 1)
+      width: 100%
+    b
+      display: block
+      font-weight: 600
+      font-size: 24px
+      line-height: 32px
+      margin-top: 4px
+      i
+        font-style: normal
+        font-size: 14px
+        color: rgb(107 114 128 / 1)
+        padding-bottom: 1px
+        font-weight: 500
+    span
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      margin-left: auto
+      font-weight: 600
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 6px
+      &::before
+        content: ''
+        display: block
+        width: 20px
+        height: 20px
+        background-repeat: no-repeat
+        background-position: center
+        margin-right: 4px
+      &.up
+        color: rgb(22 163 74 / 1)
+        &::before
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%2316a34a' aria-hidden='true' class='nz sb up add axx'%3E%3Cpath fill-rule='evenodd' d='M10 17a.75.75 0 01-.75-.75V5.612L5.29 9.77a.75.75 0 01-1.08-1.04l5.25-5.5a.75.75 0 011.08 0l5.25 5.5a.75.75 0 11-1.08 1.04l-3.96-4.158V16.25A.75.75 0 0110 17z' clip-rule='evenodd'%3E%3C/path%3E%3C/svg%3E")
+      &.down
+        color: rgb(220 38 38 / 1)
+        &::before
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23dc2626' aria-hidden='true' class='nz sb up add azb'%3E%3Cpath fill-rule='evenodd' d='M10 3a.75.75 0 01.75.75v10.638l3.96-4.158a.75.75 0 111.08 1.04l-5.25 5.5a.75.75 0 01-1.08 0l-5.25-5.5a.75.75 0 111.08-1.04l3.96 4.158V3.75A.75.75 0 0110 3z' clip-rule='evenodd'%3E%3C/path%3E%3C/svg%3E")

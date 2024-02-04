@@ -1,10 +1,15 @@
 import Header from '../../components/Header/Header';
+import Statistics from '../../components/Statistics/Statistics';
 
 function Dashboard() {
   return (
     <>
       <Header />
-      <h2>Dashboard</h2>
+      <main className="main">
+        <div className="container">
+          <Statistics />
+        </div>
+      </main>
     </>
   );
 }
