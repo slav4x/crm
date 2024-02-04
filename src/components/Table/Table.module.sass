@@ -1,0 +1,128 @@
+.table
+  background: #fff
+  box-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a
+  border-radius: 7px
+  overflow: hidden
+  margin-top: 20px
+  &-head
+    background-color: rgb(249 250 251 / 1)
+    border-bottom: 1px solid rgb(209 213 219 / 1)
+    display: flex
+    flex-wrap: wrap
+    font-weight: 600
+  &-row
+    border-bottom: 1px solid rgb(209 213 219 / 0.5)
+    display: flex
+    flex-wrap: wrap
+    transition: background .2s
+    position: relative
+    line-height: 20px
+    &:hover
+      background: rgb(249 250 251 / 1)
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 14px
+      bottom: 0
+      margin: auto 0
+      width: 6px
+      height: 6px
+      border-radius: 100%
+      background: #d8d8d8
+      box-shadow: 0 0 0 4px #d8d8d82e
+    &.new::before
+      background: rgb(74 222 128 / 1)
+      box-shadow: 0 0 0 4px #4ade801a
+  &-col
+    padding: 16px 12px
+    &:first-child
+      padding-left: 38px
+    &:last-child
+      padding-right: 24px
+    &:nth-child(1)
+      width: 110px
+    &:nth-child(2)
+      width: 200px
+    &:nth-child(3)
+      width: 240px
+    &:nth-child(4)
+      width: 280px
+    &:nth-child(5)
+      width: 180px
+    &:nth-child(6)
+      width: 150px
+      margin-left: auto
+      font-weight: 600
+      text-decoration: none
+      color: rgb(79 70 229 / 1)
+      box-shadow: none !important
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      justify-content: flex-end
+    &.none
+      opacity: 0.5
+  // &-comment .lp-table__open
+  //   &::before
+  //     content: ''
+  //     display: block
+  //     width: 20px
+  //     height: 20px
+  //     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%239ca3af' aria-hidden='true'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z'%3E%3C/path%3E%3C/svg%3E") no-repeat center
+  //     margin-right: auto
+  &-bottom
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+    padding: 12px 24px 12px 38px
+  &-total
+    b
+      font-weight: 700
+  &-content
+    display: none
+
+  &-pagination
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+    background: #fff
+    border-radius: 4px
+    margin: 0
+    border: 1px solid rgb(209 213 219 / 1)
+    overflow: hidden
+    li
+      margin: 0
+      display: inline-block
+      border-right: 1px solid rgb(209 213 219 / 1)
+      a
+        width: 34px
+        height: 34px
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
+        text-decoration: none
+        font-weight: 600
+        color: currentColor
+        line-height: 18px
+        transition: background .2s
+        box-shadow: none
+        &:hover
+          background: #f9fafb
+      &:last-child
+        border: 0
+      &.prev, &.next
+        a::before
+          content: ''
+          display: block
+          width: 20px
+          height: 20px
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z' clip-rule='evenodd'%3E%3C/path%3E%3C/svg%3E") no-repeat center
+          opacity: 0.3
+      &.next a::before
+        transform: rotate(180deg)
+      &.current a
+        background: rgb(79 70 229 / 1)
+        color: #fff
