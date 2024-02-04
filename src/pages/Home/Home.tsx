@@ -1,12 +1,13 @@
-import Header from '../../components/Header/Header';
+import React from 'react';
 
-function Home() {
+import Layout from '../../components/Layout/Layout';
+
+const Home: React.FC = () => {
   return (
-    <>
-      <Header />
+    <Layout>
       <h2>Home</h2>
-    </>
+    </Layout>
   );
-}
+};
 
 export default Home;

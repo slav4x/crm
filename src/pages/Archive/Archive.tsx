@@ -1,12 +1,13 @@
-import Header from '../../components/Header/Header';
+import React from 'react';
 
-function Archive() {
+import Layout from '../../components/Layout/Layout';
+
+const Archive: React.FC = () => {
   return (
-    <>
-      <Header />
+    <Layout>
       <h2>Archive</h2>
-    </>
+    </Layout>
   );
-}
+};
 
 export default Archive;

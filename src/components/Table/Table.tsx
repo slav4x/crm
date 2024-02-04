@@ -1,8 +1,10 @@
+import React from 'react';
+
 import styles from './Table.module.sass';
 import TableItem from './TableItem';
 import TablePagination from './TablePagination';
 
-function Table() {
+const Table: React.FC = () => {
   return (
     <div className={styles['table']}>
       <div className={styles['table-head']}>
@@ -26,6 +28,6 @@ function Table() {
       </div>
     </div>
   );
-}
+};
 
 export default Table;

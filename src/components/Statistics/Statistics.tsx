@@ -1,6 +1,8 @@
+import React from 'react';
+
 import styles from './Statistics.module.sass';
 
-export default function Statistics() {
+const Statistics: React.FC = () => {
   return (
     <div className={styles['statistics']}>
       <div className={styles['statistics-item']}>
@@ -30,4 +32,6 @@ export default function Statistics() {
       </div>
     </div>
   );
-}
+};
+
+export default Statistics;

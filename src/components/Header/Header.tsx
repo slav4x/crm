@@ -1,8 +1,9 @@
+import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
 import styles from './Header.module.sass';
 
-export default function Header() {
+const Header: React.FC = () => {
   const location = useLocation();
 
   const links = [
@@ -13,8 +14,8 @@ export default function Header() {
 
   return (
     <header className={styles['header']}>
-      <div className="container">
-        {/* <div className={styles['header-logo']}></div> */}
+      <div className={styles['header-container']}>
+        <div className={styles['header-logo']}></div>
         <ul className={styles['header-nav']}>
           {links.map((link) => (
             <li
@@ -28,4 +29,6 @@ export default function Header() {
       </div>
     </header>
   );
-}
+};
+
+export default Header;

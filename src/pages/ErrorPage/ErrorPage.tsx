@@ -1,15 +1,20 @@
+import React from 'react';
 import { useRouteError } from 'react-router-dom';
 
-export default function ErrorPage() {
+import Layout from '../../components/Layout/Layout';
+
+const ErrorPage: React.FC = () => {
   const error: unknown = useRouteError();
 
   return (
-    <div>
+    <Layout>
       <h1>Oops!</h1>
       <p>Sorry, an unexpected error has occurred.</p>
       <p>
         <i>{error.statusText || error.message}</i>
       </p>
-    </div>
+    </Layout>
   );
-}
+};
+
+export default ErrorPage;

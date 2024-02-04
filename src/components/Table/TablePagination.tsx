@@ -1,6 +1,8 @@
+import React from 'react';
+
 import styles from './Table.module.sass';
 
-function TablePagination() {
+const TablePagination: React.FC = () => {
   return (
     <ul className={styles['table-pagination']}>
       <li className={styles['prev']}>
@@ -17,6 +19,6 @@ function TablePagination() {
       </li>
     </ul>
   );
-}
+};
 
 export default TablePagination;

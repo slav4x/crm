@@ -1,12 +1,13 @@
-import Header from '../../components/Header/Header';
+import React from 'react';
 
-function Settings() {
+import Layout from '../../components/Layout/Layout';
+
+const Settings: React.FC = () => {
   return (
-    <>
-      <Header />
+    <Layout>
       <h2>Settings</h2>
-    </>
+    </Layout>
   );
-}
+};
 
 export default Settings;

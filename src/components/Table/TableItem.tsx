@@ -1,6 +1,8 @@
+import React from 'react';
+
 import styles from './Table.module.sass';
 
-function TableItem() {
+const TableItem: React.FC = () => {
   return (
     <div className={styles['table-row']}>
       <div className={styles['table-col']}>7</div>
@@ -13,6 +15,6 @@ function TableItem() {
       </div>
     </div>
   );
-}
+};
 
 export default TableItem;

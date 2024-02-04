@@ -1,19 +1,16 @@
-import Header from '../../components/Header/Header';
+import React from 'react';
+
+import Layout from '../../components/Layout/Layout';
 import Statistics from '../../components/Statistics/Statistics';
 import Table from '../../components/Table/Table';
 
-function Dashboard() {
+const Dashboard: React.FC = () => {
   return (
-    <>
-      <Header />
-      <main className="main">
-        <div className="container">
-          <Statistics />
-          <Table />
-        </div>
-      </main>
-    </>
+    <Layout>
+      <Statistics />
+      <Table />
+    </Layout>
   );
-}
+};
 
 export default Dashboard;
